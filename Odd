@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    /*  Написати програму, яка знаходить суму всіх цілих непарних чисел у діапазоні,
+      зазначеному користувачем.*/
+    int start, end, SUM = 0;
+    cout << "write start= " << endl;
+    cin >> start;
+    cout << "write end= " << endl;
+    cin >> end;
+    for (int i = start; i <= end; i++) 
+    {
+        if (i%2!=0)
+            SUM += i;
+    }
+    cout << "Summa of numbers= " << SUM << endl;
+
+  
+}
